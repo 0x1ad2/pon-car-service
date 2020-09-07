@@ -1,0 +1,26 @@
+// get all brands with their cars
+query {
+	brands {
+		name
+		country
+		car {
+			id
+			name
+			year
+		}
+	}
+}
+
+
+// get all cars with their brands
+{
+	cars {
+		id
+		name
+		year
+		brand {
+			name
+			country
+		}
+	}
+}
